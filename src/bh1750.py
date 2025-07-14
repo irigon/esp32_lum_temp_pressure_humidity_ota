@@ -1,6 +1,5 @@
 # bh1750.py
 import time
-import machine
 
 PWR_DOWN = 0x00
 PWR_ON = 0x01
