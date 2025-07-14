@@ -4,9 +4,9 @@ name: Ensure version.txt was updated
 
 on:
   pull_request:
-    branches: [ master ]
+    branches: [master]
   push:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   check-version:
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 2  # so we can compare with previous commit
+          fetch-depth: 2 # so we can compare with previous commit
 
       - name: Check if version.txt was modified
         run: |
@@ -26,4 +26,3 @@ jobs:
             echo "❌ version.txt was NOT updated."
             echo "You must bump the version for OTA clients."
             exit 1
-
