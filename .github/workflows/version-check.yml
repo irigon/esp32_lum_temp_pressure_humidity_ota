@@ -21,8 +21,8 @@ jobs:
       - name: Check if version.txt was modified
         run: |
           if git diff --name-only HEAD^ HEAD | grep -q '^src/version\.txt$'; then
-            echo "✅ version.txt was updated."
+            echo "[OK] version.txt was updated."
           else
-            echo "❌ version.txt was NOT updated."
+            echo "[Not OK] version.txt was NOT updated."
             echo "You must bump the version for OTA clients."
             exit 1
