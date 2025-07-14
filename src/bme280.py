@@ -1,6 +1,5 @@
 # bme280.py (versão simplificada e funcional para MicroPython)
 import ustruct
-import time
 
 class BME280:
     def __init__(self, i2c, address=0x76):
