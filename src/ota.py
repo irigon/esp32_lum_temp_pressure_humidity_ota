@@ -5,8 +5,9 @@ import time
 
 from secrets import SSID, PASSWORD
 
-GITHUB_API_URL = "https://api.github.com/repos/irigon/ota_esp32/contents/src"
-RAW_BASE_URL = "https://raw.githubusercontent.com/irigon/ota_esp32/master/src"
+REPO = "esp32_lum_temp_pressure_humidity_ota"
+GITHUB_API_URL = f"https://api.github.com/repos/irigon/{REPO}"
+RAW_BASE_URL = f"https://raw.githubusercontent.com/irigon/{REPO}/master/src"
 LOCAL_VERSION_FILE = "version.txt"
 
 headers = {
