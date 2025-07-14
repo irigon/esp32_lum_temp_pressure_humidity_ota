@@ -8,5 +8,5 @@ try:
     else:
         print("No OTA update needed.")
 except Exception as e:
-    print("OTA update failed:", e)
+    print("OTA update failed.", e)
 
