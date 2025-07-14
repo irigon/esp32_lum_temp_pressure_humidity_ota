@@ -26,3 +26,4 @@ jobs:
             echo "[Not OK] version.txt was NOT updated."
             echo "You must bump the version for OTA clients."
             exit 1
+          fi
